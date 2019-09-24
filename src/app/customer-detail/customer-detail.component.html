@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card text-center">
+      <div *ngIf="customer" class="card-body">
+        <h5 class="card-title"> {{ customer.name | uppercase }} Details</h5>
+        <div><span>id: </span>{{ customer.id }}</div>
+          <div>
+            <label>name:
+              <input [(ngModel)]="customer.name" placeholder="name"/>
+            </label>
+            <label>email:
+              <input [(ngModel)]="customer.email" type="email" placeholder="email"/>
+            </label>
+            <label>cpf:
+              <input [(ngModel)]="customer.cpf" placeholder="cpf"/>
+            </label>
+            <label>address:
+              <input [(ngModel)]="customer.address" placeholder="address"/>
+            </label>
+          </div>
+          <button (click)="goBack()" class="btn btn-primary">return</button>
+          <button (click)="save()" class="btn btn-primary">save</button>
+      </div>
+    </div>
+  </div>
+</div>
+

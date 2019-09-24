@@ -1,0 +1,23 @@
+<h3>Customers</h3>
+
+<div class="card-deck">
+  <div class="card">
+    <a *ngFor="let customer of customers" class="col-1-4"
+       routerLink="/detail/{{customer.id}}">
+    <div class="card text-white bg-primary mb-3">
+      <h4>{{customer.name}}</h4>
+    </div>
+    </a>
+  </div>
+</div>
+
+<app-search></app-search>
+<div class="custom-control-inline">
+  <ul class="customers">
+    <li *ngFor="let customer of customers">
+      <a routerLink="/detail/{{ customer.id }}">
+        <span class="badge">{{ customer.id }}</span> {{ customer.name }}
+      </a>
+    </li>
+  </ul>
+</div>
