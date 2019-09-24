@@ -9,12 +9,13 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CustomerComponent } from './customer/customer.component';
 import { UploadComponent } from './upload/upload.component';
-import { ChatComponent } from './chat/chat-app-server/newMessages/chat.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SearchComponent } from './customer-search/search.component';
 import { CustomerDetailComponent } from './customer-detail/customer-detail.component';
 import {FormsModule} from "@angular/forms";
 import { MessagesComponent } from './message/message.component';
+import { FeedFormComponent} from "./feed-form/feed-form.component";
+import { FeedComponent } from './feed/feed.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MessagesComponent } from './message/message.component';
     NavbarComponent,
     CustomerComponent,
     UploadComponent,
-    ChatComponent,
+    FeedFormComponent,
+    FeedComponent,
     DashboardComponent,
     SearchComponent,
     CustomerDetailComponent,
